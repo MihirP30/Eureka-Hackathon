@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1>Home Page</h1>
+    <p>{{greeting}} {{content}}</p>
+
+    {% for x in mylist %}
+      {% if x > 2 %}    
+        <p>{{x}} good</p>
+      {% else %}
+        <p>{{x}} bad</p>
+      {% endif %}
+    {% endfor %}
+  </body>
+</html>
